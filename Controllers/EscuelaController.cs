@@ -1,3 +1,5 @@
+using System;
+using EjercicioMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EjercicioMVC.Controllers
@@ -6,7 +8,12 @@ namespace EjercicioMVC.Controllers
     { 
         public IActionResult Index()
         {
-            return View();
+            var escuela = new Escuela();
+            escuela.Nombre="Escuela Nicolas";
+            escuela.AñoFundacion=2021;
+            escuela.EscuelaId=Guid.NewGuid().ToString();
+            
+            return View(escuela);
         }
     }
 }
