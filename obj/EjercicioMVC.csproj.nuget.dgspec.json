@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Desarrollo\\Fuentes\\EjercicioMVC\\EjercicioMVC.csproj",
         "projectName": "EjercicioMVC",
         "projectPath": "C:\\Desarrollo\\Fuentes\\EjercicioMVC\\EjercicioMVC.csproj",
-        "packagesPath": "C:\\Users\\nfiquitivase\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Nicolas\\.nuget\\packages\\",
         "outputPath": "C:\\Desarrollo\\Fuentes\\EjercicioMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nfiquitivase\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nicolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
