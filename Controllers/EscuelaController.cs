@@ -12,6 +12,8 @@ namespace EjercicioMVC.Controllers
             escuela.Nombre="Escuela Nicolas";
             escuela.AñoFundacion=2021;
             escuela.EscuelaId=Guid.NewGuid().ToString();
+
+            ViewBag.informacionAdicional="+ informacion";
             
             return View(escuela);
         }
