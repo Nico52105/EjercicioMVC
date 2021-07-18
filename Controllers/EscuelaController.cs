@@ -10,8 +10,8 @@ namespace EjercicioMVC.Controllers
         {
             var escuela = new Escuela();
             escuela.Nombre="Escuela Nicolas";
-            escuela.AñoFundacion=2021;
-            escuela.EscuelaId=Guid.NewGuid().ToString();
+            escuela.AñoDeCreación=2021;
+            escuela.UniqueId=Guid.NewGuid().ToString();
 
             ViewBag.informacionAdicional="+ informacion";
             
