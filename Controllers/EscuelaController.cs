@@ -12,6 +12,10 @@ namespace EjercicioMVC.Controllers
             escuela.Nombre="Escuela Nicolas";
             escuela.AñoDeCreación=2021;
             escuela.UniqueId=Guid.NewGuid().ToString();
+            escuela.TipoEscuela=TiposEscuela.Secundaria;
+            escuela.Dirección="Calle 1 # 10 - 20";
+            escuela.Pais="Colombia";
+            escuela.Ciudad="Bogota";
 
             ViewBag.informacionAdicional="+ informacion";
             
