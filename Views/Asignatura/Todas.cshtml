@@ -1,0 +1,14 @@
+@model List<Asignatura>
+
+@{
+    ViewData["Title"] = "Informacion de todas las Asignatura";
+    Layout="_MyLayout";
+}
+
+<h1>@ViewData["Title"]</h1>
+@foreach(var asignatura in Model){
+    <partial name="../Asignatura/parcial/Asignatura.cshtml" model="asignatura"/>
+}
+
+
+<p><i>@ViewBag.informacionAdicional</i></p>
