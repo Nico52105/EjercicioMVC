@@ -1,0 +1,14 @@
+@model List<Alumno>
+
+@{
+    ViewData["Title"] = "Informacion de todos los Alumnos";
+    Layout="_MyLayout";
+}
+
+<h1>@ViewData["Title"]</h1>
+@foreach(var objetoEscuelaBase in Model){    
+    <partial name="../Parcial/ObjetoEscuelaBase.cshtml" model="objetoEscuelaBase"/>
+}
+
+
+<p><i>@ViewBag.informacionAdicional</i></p>

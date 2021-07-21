@@ -1,7 +1,7 @@
-﻿@model Asignatura
+﻿@model ObjetoEscuelaBase
 
 @{
-    ViewData["Title"] = "Informacion de la Asignatura";
+    ViewData["Title"] = "Informacion del Alumno";
     Layout="_MyLayout";
 }
 
@@ -12,7 +12,7 @@ Nombre:@Model.Nombre </br>
 Id:@Model.UniqueId
 </p>
 <strong>Informacion desde la vista parcial</strong>
-<partial name="../Asignatura/Parcial/Asignatura.cshtml"/>
+<partial name="../Parcial/ObjetoEscuelaBase.cshtml"/>
 
 
 

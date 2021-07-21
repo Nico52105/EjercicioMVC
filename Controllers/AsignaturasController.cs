@@ -18,7 +18,7 @@ namespace EjercicioMVC.Controllers
             return View(asignatura);
         }
 
-        public IActionResult Todas()
+        public IActionResult Listado()
         {
             List<Asignatura> asignaturas= new List<Asignatura>();
             for (int i = 0; i < 5; i++)
