@@ -6,9 +6,7 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-@foreach(var objetoEscuelaBase in Model){    
-    <partial name="../Parcial/ObjetoEscuelaBase.cshtml" model="objetoEscuelaBase"/>
-}
+<partial name="../Parcial/TablaObjetoEscuelaBase.cshtml" model="Model"/>
 
 
 <p><i>@ViewBag.informacionAdicional</i></p>
