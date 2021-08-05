@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using EjercicioMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,30 +8,23 @@ namespace EjercicioMVC.Controllers
 {
     public class AsignaturaController: Controller
     {
+        private MyContext _context;
+        public AsignaturaController(MyContext context)
+        {
+            _context=context;
+        }
+
         public IActionResult Index()
         {
-            var asignatura = new Asignatura();
-            asignatura.Nombre="Programacion";
-            asignatura.UniqueId=Guid.NewGuid().ToString();
-            
             ViewBag.informacionAdicional="+ informacion de Asignatura";
-            
+            var asignatura=_context.Asignaturas.FirstOrDefault();
             return View(asignatura);
         }
 
         public IActionResult Listado()
         {
-            List<Asignatura> asignaturas= new List<Asignatura>();
-            for (int i = 0; i < 5; i++)
-            {
-                var asignatura = new Asignatura();
-                asignatura.Nombre="Asignatura "+i;
-                asignatura.UniqueId=Guid.NewGuid().ToString();
-                asignaturas.Add(asignatura);
-            }
-                        
             ViewBag.informacionAdicional="+ informacion de todas las Asignaturas";
-            
+            var asignaturas=_context.Asignaturas.ToList();
             return View(asignaturas);
         }
     }
